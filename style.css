@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Bebas Neue', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #BCB8B1; */
+}
+
+.topSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.nav a {
+    font-size: 2rem;
+}
+
+.midImg {
+    width: 99%;
+}
+
+.portImg {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1%;
+    /* padding: 20px; */
+}
+
+.portImg img {
+    width: 20%;
+}
+
+.portInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: white;
+    color: #400406;
+    border: 1px solid #400406;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    height: 10vh;
+    border: 3px solid #400406;
+    border-radius: 10px;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #400406;
+    text-decoration: none;
+    font-size: 150%;
+    color: #000000;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+@media(max-width: 800px){
+    .midImg {
+        width: 99%;
+    }
+
+    .portImg {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portImg img {
+        margin-top: 5%;
+        width: 45%;
+    }
+}
+
+@media(max-width: 500px){
+    .topSection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .nav a {
+        padding: 5rem;
+        margin: 5%;
+        font-size: 1rem;
+    }
+}
