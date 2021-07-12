@@ -2,99 +2,80 @@
 
 * {
     font-family: 'Bebas Neue', cursive;
-    background-color: #BCB8B1;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #BCB8B1; */
+}
+
+.topSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
-    /* border: 2px solid red;
-    background-color: lightsalmon; */
-    width: 100%;
-    font-size: 500%;
-    margin-bottom: 0;
-    margin-top: 2%;
+    font-size: 3rem;
 }
 
-.nav {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.nav a {
+    font-size: 2rem;
 }
 
-button a {
-    font-size: 110%;
-    border-radius: 10%;
-    padding: 25px;
-    width: 5%;
-    height: 5%;
-    color: #000000;
-    text-decoration: none;
+.midImg {
+    width: 99%;
 }
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 2%;
-    /* border: 2px solid blue;
-    background-color: lightblue; */
-}
-
-section p {
-    /* border: 1px solid red; */
-    margin: 0 5% 0 5%;
-}
-
-.body {
+.portImg {
     display: flex;
     justify-content: space-evenly;
-    /* border: 2px solid yellow; */
-    width: 100%;
-    background-color: #BCB8B1;
+    margin: 1%;
+    /* padding: 20px; */
 }
 
-.introPic{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: 10px;
-    border: 3px solid #400406;
-}
-
-.introPic img {
-    width: 100%;
-    height: 50vh;
-    border-radius: 10px;
-}
-
-.portPic {
+.portImg img {
     width: 20%;
-    height: 30vh;
-    border-radius: 10px;
-    margin: 1% 0 1% 2%;
-    border: 3px solid #400406;
-
 }
 
 .portInfo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    margin-left: -5%;
-    /* border: 2px solid red; */
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+button {
+    background-color: white;
+    color: #400406;
+    border: 1px solid #400406;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 2%;
+    margin-top: 0;
     width: 100%;
     height: 10vh;
-    border: 2px solid black;
+    border: 3px solid #400406;
+    border-radius: 10px;
 }
 
 footer a {
@@ -102,4 +83,48 @@ footer a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    border: 1px solid #400406;
+    text-decoration: none;
+    font-size: 150%;
+    color: #000000;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+@media(max-width: 800px){
+    .midImg {
+        width: 99%;
+    }
+
+    .portImg {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portImg img {
+        margin-top: 5%;
+        width: 45%;
+    }
+}
+
+@media(max-width: 500px){
+    .topSection {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .nav a {
+        padding: 5rem;
+        margin: 5%;
+        font-size: 1rem;
+    }
 }
